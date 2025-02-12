@@ -2,11 +2,13 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
+# Definição do endpoit 'GET /saudacao?nome=SeuNome'
 @app.route('/saudacao', methods=['GET'])
 def saudacao():
     nome = request.args.get('nome', 'Amigo')
     return f'Olá, {nome}! Muito feliz em te ver por aqui! :)'
 
+# Definição do endpoit 'POST /soma'
 @app.route('/soma', methods=['POST'])
 def soma():
     dados = request.get_json()
