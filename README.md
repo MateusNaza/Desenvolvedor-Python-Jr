@@ -1,5 +1,19 @@
 # Desenvolvedor-Python-Jr
 
+# Índice
+
+1. [Preparação de ambiente](#preparação-de-ambiente)    
+2. [Data Analysis](#2-data-analysis)
+   - [Detalhes do código](#detalhes-do-código)
+   - [Como executar o código](#como-executar-o-código)
+3. [Web Framework](#3-web-framework)
+   - [Detalhes do código](#detalhes-do-código-1)
+   - [Como executar o app](#execução-do-app)
+4. [Asynchronous Programming](#4-asynchronous-programming)
+   - [Detalhes do código](detalhes-do-código-2)
+   - [Como executar o código](#como-executar-o-código-1)
+
+---
 # Preparação de ambiente       
     
 Para preparar o ambiente escolhi por usar o ambiente virtual do python (venv), sendo assim, consigo ter um ambiente de desenvolvimento desacoplado para instalar as dependências necessárias. Abaixo seguem comandos que efeutei no terminal para preparar esse ambiente:    
@@ -91,5 +105,9 @@ Para essa atividade utilizei a biblioteza _asyncio_ do python, criei uma funçã
 >Já as funções assíncronas foram **2 segundos** de execução
 >Ou seja, o tempo de execução caiu pela metade quando usamos as funções assíncronas
     
+## Como executar o código    
     
+1. Acesse a pasta '4.\ Asynchronous\ Programming' atravéz do comando: ```bash cd 4.\ Asynchronous\ Programming```
+2. Instale as dependências: ```bash pip install -r requirements ```
+3. Execute o script: ```bash python main.py ```
 
