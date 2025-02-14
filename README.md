@@ -1,8 +1,7 @@
 # Desenvolvedor-Python-Jr
-    
-## 3. Web Framework    
-    
-### Preparação de ambiente    
+
+## Preparação de ambiente    
+---   
     
 Para preparar o ambiente escolhi por usar o ambiente virtual do python (venv), sendo assim, consigo ter um ambiente de desenvolvimento desacoplado para instalar as dependências necessárias. Abaixo seguem comandos que efeutei no terminal para preparar esse ambiente:    
     
@@ -14,15 +13,38 @@ python -m venv .venv
 # Inicia o ambiente
 source .venv/bin/activate
 
-# Instala a biblioteca necessária
-pip install flask
+# Instala as bibliotecas necessárias
+pip install flask pandas
 
 # Cria um arquivo requirements.txt com todas as bibliotecas e dependências que tenho instaladas no meu ambiente
 pip freeze > requirements.txt
-```    
+```
+
+## 2. Data Analysis
+---
+    
+### Detalhes do código    
+    
+Para efetuar as análises nos dados de venda eu utilizei a biblioteca pandas e segui os seguintes passos:    
+    
+- Criei meu arquivo '.csv' com dados de vendas de produtos hospitalares, seguindo a estrutura de colunas proposta no exercício.    
+- Li o arquivo de vendas e salvei dentro de um _Dataframe_ chamado 'vendas'.    
+- Criei uma nova coluna 'total' que basicamente multiplica a 'quantidade' pelo 'valor_unitario'.    
+- Calculei o faturamento por produto agrupando o _Dataframe_ por produto e somando os valores da coluna 'total'.    
+- Para encontrar o produto de maior e menor faturamento eu utilizei respectivamente as funções _idxmax_ e _idxmin_, juntamente com a função _loc_.    
+    
+### Como executar o código    
+    
+1. Acesse a pasta '2. Data Analysis' atravéz do comando: ```bash cd 2.\ Data\ Analysis/```
+2. Instale as dependências: ```bash pip install -r requirements ```
+3. Execute o script: ```bash python main.py ```
     
 
-### Detalhes do código    
+## 3. Web Framework    
+---
+         
+### Detalhes do código       
+     
 No código eu sigo as seguintes estapas:    
     
 - Importo de dentro da biblioteca flask classes e funções que utilizarei
