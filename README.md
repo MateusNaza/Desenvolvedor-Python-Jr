@@ -1,7 +1,6 @@
 # Desenvolvedor-Python-Jr
 
-## Preparação de ambiente    
----   
+# Preparação de ambiente       
     
 Para preparar o ambiente escolhi por usar o ambiente virtual do python (venv), sendo assim, consigo ter um ambiente de desenvolvimento desacoplado para instalar as dependências necessárias. Abaixo seguem comandos que efeutei no terminal para preparar esse ambiente:    
     
@@ -20,10 +19,9 @@ pip install flask pandas
 pip freeze > requirements.txt
 ```
 
-## 2. Data Analysis
----
+# 2. Data Analysis
     
-### Detalhes do código    
+## Detalhes do código    
     
 Para efetuar as análises nos dados de venda eu utilizei a biblioteca pandas e segui os seguintes passos:    
     
@@ -33,17 +31,16 @@ Para efetuar as análises nos dados de venda eu utilizei a biblioteca pandas e s
 - Calculei o faturamento por produto agrupando o _Dataframe_ por produto e somando os valores da coluna 'total'.    
 - Para encontrar o produto de maior e menor faturamento eu utilizei respectivamente as funções _idxmax_ e _idxmin_, juntamente com a função _loc_.    
     
-### Como executar o código    
+## Como executar o código    
     
 1. Acesse a pasta '2. Data Analysis' atravéz do comando: ```bash cd 2.\ Data\ Analysis/```
 2. Instale as dependências: ```bash pip install -r requirements ```
 3. Execute o script: ```bash python main.py ```
     
 
-## 3. Web Framework    
----
+# 3. Web Framework    
          
-### Detalhes do código       
+## Detalhes do código       
      
 No código eu sigo as seguintes estapas:    
     
@@ -55,7 +52,7 @@ No código eu sigo as seguintes estapas:
 - Chamo a função de inicialização do meu app
     
 
-### Execução do app
+## Execução do app
 
 Para executar o app deve se seguir os seguintes passos:
     
