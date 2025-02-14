@@ -13,7 +13,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 # Instala as bibliotecas necessárias
-pip install flask pandas
+pip install flask pandas asyncio
 
 # Cria um arquivo requirements.txt com todas as bibliotecas e dependências que tenho instaladas no meu ambiente
 pip freeze > requirements.txt
@@ -72,5 +72,24 @@ Já para a requisição POST, podemos acessar via POSTMAN, cURL, mas nesse proje
 2. Abra um novo terminal, e, caso não esteja na pasta '3. Web Framework', acesse atravéz do comando: ```bash cd 3.\ Web\ Frameworks/```
 3. Execute o Script de requisição: ```bash python requisicao_post.py ```
 4. O resultado deve aparecer logo em seguida no terminal.
+    
 
+# 4. Asynchronous Programming
+     
+## Detalhes do código    
+    
+Para essa atividade utilizei a biblioteza _asyncio_ do python, criei uma função sincrona e uma assíncrona para verificar a diferença de performance. Abaixo segue o passo a passo:
+    
+- Criei uma função de chamada síncrona que utiliza o modulo _sleep_ da biblioteca _time_
+- Para executar as três funões de chamada e medir o tempo de execução utilizei uma função *main_sync*
+- Criei uma função assíncrona que utiliza o modulo _sleep_ porém dessa vez da biblioteca _asyncio_
+- Para executar a função assíncrona três vezes e medir o tempo utilizei a função *main_async*
+- Simulei uma das funções gastando 2 segundos de tempo de execução e as outras duas gastando 1 segundo de execução, fiz isso para os dois cenários.
+    
+>**Resultado:**    
+>As funções síncronas levaram **4 segundos** para executar
+>Já as funções assíncronas foram **2 segundos** de execução
+>Ou seja, o tempo de execução caiu pela metade quando usamos as funções assíncronas
+    
+    
 
