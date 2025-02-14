@@ -1,0 +1,22 @@
+data,produto,quantidade,preco_unitario
+2025-02-01,Máscara Cirúrgica,100,0.5
+2025-02-01,Luvas de Látex,50,0.2
+2025-02-02,Álcool em Gel,200,5.0
+2025-02-03,Termômetro Digital,30,10.0
+2025-02-04,Bisturi,40,15.0
+2025-02-04,Seringa Descartável,150,0.1
+2025-02-05,Fita de Glicemia,300,0.05
+2025-02-06,Cadeira de Rodas,5,300.0
+2025-02-06,Aparelho de Pressão,25,75.0
+2025-02-07,Desfibrilador,2,1200.0
+2025-02-08,Bolsa de Sangue,15,150.0
+2025-02-01,Máscara Cirúrgica,50,0.5
+2025-02-01,Luvas de Látex,100,0.2
+2025-02-02,Álcool em Gel,20,5.0
+2025-02-04,Seringa Descartável,150,0.1
+2025-02-05,Fita de Glicemia,300,0.05
+2025-02-06,Cadeira de Rodas,5,300.0
+2025-02-06,Aparelho de Pressão,25,75.0
+2025-02-07,Desfibrilador,2,1200.0
+2025-02-08,Bolsa de Sangue,15,150.0
+2025-02-01,Máscara Cirúrgica,50,0.5
