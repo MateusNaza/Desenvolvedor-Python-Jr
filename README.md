@@ -47,8 +47,8 @@ Para efetuar as análises nos dados de venda eu utilizei a biblioteca pandas e s
     
 ## Como executar o código    
     
-1. Acesse a pasta '2. Data Analysis' atravéz do comando: ```bash cd 2.\ Data\ Analysis/```
-2. Instale as dependências: ```bash pip install -r requirements ```
+1. Estando na pasta raiz do repositório, instale as dependências: ```bash pip install -r requirements ```
+2. Acesse a pasta '2. Data Analysis' atravéz do comando: ```bash cd 2.\ Data\ Analysis/```
 3. Execute o script: ```bash python main.py ```
     
 
@@ -70,8 +70,8 @@ No código eu sigo as seguintes estapas:
 
 Para executar o app deve se seguir os seguintes passos:
     
-1. Acesse a pasta '3. Web Framework' atravéz do comando: ```bash cd 3.\ Web\ Frameworks/```
-2. Instale as dependências: ```bash pip install -r requirements ```
+1. Estando na pasta raiz do repositório, instale as dependências: ```bash pip install -r requirements ```
+2. Acesse a pasta '3. Web Framework' atravéz do comando: ```bash cd 3.\ Web\ Frameworks/```
 3. Inicie o app: ```bash python app.py ```
     
     
@@ -107,7 +107,7 @@ Para essa atividade utilizei a biblioteza _asyncio_ do python, criei uma funçã
     
 ## Como executar o código    
     
-1. Acesse a pasta '4.\ Asynchronous\ Programming' atravéz do comando: ```bash cd 4.\ Asynchronous\ Programming```
-2. Instale as dependências: ```bash pip install -r requirements ```
+1. Estando na pasta raiz do repositório, instale as dependências: ```bash pip install -r requirements ```
+2. Acesse a pasta '4.\ Asynchronous\ Programming' atravéz do comando: ```bash cd 4.\ Asynchronous\ Programming```
 3. Execute o script: ```bash python main.py ```
 
