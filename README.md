@@ -110,4 +110,33 @@ Para essa atividade utilizei a biblioteza _asyncio_ do python, criei uma funçã
 1. Estando na pasta raiz do repositório, instale as dependências: ```bash pip install -r requirements ```
 2. Acesse a pasta '4.\ Asynchronous\ Programming' atravéz do comando: ```bash cd 4.\ Asynchronous\ Programming```
 3. Execute o script: ```bash python main.py ```
+     
+      
+# 6. Containerization    
+     
+## Detalhes do desenvolvimento
+     
+Para containerizar minha aplicação, criei uma imagem _docker_ que reproduz meu ambiente de execução local dentro de um container. Após construir o _Dockerfile_ executei os seguintes passos:
+     
+1. Construí minha imagem: ```bash docker build -t app_flask .```
+2. Verifiquei os dados dela: ```bash docker images```
+3. Rodei um container para testar se estava funcionando como deveria: ```bash docker run -d --rm -p 5000:5000 app_flask```
+       
+>Resolvi também subir essa imagem para o Docker Hub, poise assim facilita o Deploy posteriormente.
+     
+4. Fiz o login no Docker Hub: ```bash docker login```
+5. Em paralelo, criei um novo repositório ![repositório no docker hub](assets/dockerhub.png)
+5. 'Tagueei' minha imagem: ```bash tag app_flask mateusnazahub/flask_app:latest```
+6. Subi ela para o _Docker Hub_: ```bash push mateusnazahub/flask_app:latest```
+     
+## Como executar o código 
+     
+1. Acesse a pasta '6. Containerization' atravéz do comando: ```bash cd 6.\ Containerization```
+2. Construa a imagem: ```bash docker build -t app_flask .```
+3. Inicie um container a partir da imagem criada: ```bash docker run -d --rm -p 5000:5000 app_flask```
+
+A partir desse momento o app estará rodando na porta 5000 do localhost, para acessá-lo basta:
+
+1. Colar essa URL em um navegador web, substituindo 'SeuNome' pelo seu nome: http://127.0.0.1:5000/saudacao?nome=SeuNome
+
 
