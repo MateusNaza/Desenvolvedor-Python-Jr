@@ -10,8 +10,11 @@
    - [Detalhes do código](#detalhes-do-código-1)
    - [Como executar o app](#execução-do-app)
 4. [Asynchronous Programming](#4-asynchronous-programming)
-   - [Detalhes do código](detalhes-do-código-2)
+   - [Detalhes do código](#detalhes-do-código-2)
    - [Como executar o código](#como-executar-o-código-1)
+6. [Containerization](#6-containerization)
+   - [Detalhes do Desenvolvimento](#detalhes-do-desenvolvimento)
+   - [Como executar o código](#como-executar-o-código-2)
 
 ---
 # Preparação de ambiente       
@@ -125,7 +128,7 @@ Para containerizar minha aplicação, criei uma imagem _docker_ que reproduz meu
 >Resolvi também subir essa imagem para o Docker Hub, poise assim facilita o Deploy posteriormente.
      
 4. Fiz o login no Docker Hub: ```bash docker login```
-5. Em paralelo, criei um novo repositório ![repositório no docker hub](assets/dockerhub.png)
+5. Em paralelo, criei um novo repositório no _Docker Hub_ ![repositório no docker hub](assets/dockerhub.png)
 5. 'Tagueei' minha imagem: ```bash tag app_flask mateusnazahub/flask_app:latest```
 6. Subi ela para o _Docker Hub_: ```bash push mateusnazahub/flask_app:latest```
      
