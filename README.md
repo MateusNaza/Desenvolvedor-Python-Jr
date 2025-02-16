@@ -2,7 +2,10 @@
 
 # Índice
 
-1. [Preparação de ambiente](#preparação-de-ambiente)    
+0. [Preparação de ambiente](#preparação-de-ambiente)    
+1. [Machine Learning](#1-machine-learning)
+   - [Questão](#questão)
+   - [Resposta](#resposta)
 2. [Data Analysis](#2-data-analysis)
    - [Detalhes do código](#detalhes-do-código)
    - [Como executar o código](#como-executar-o-código)
@@ -12,6 +15,8 @@
 4. [Asynchronous Programming](#4-asynchronous-programming)
    - [Detalhes do código](#detalhes-do-código-2)
    - [Como executar o código](#como-executar-o-código-1)
+5. [Cloud Services](#5-Cloud-Services)
+   - [#Resposta à questão](#resposta-à-questão)
 6. [Containerization](#6-containerization)
    - [Detalhes do Desenvolvimento](#detalhes-do-desenvolvimento)
    - [Como executar o código](#como-executar-o-código-2)
@@ -38,7 +43,21 @@ pip install flask pandas asyncio
 # Cria um arquivo requirements.txt com todas as bibliotecas e dependências que tenho instaladas no meu ambiente
 pip freeze > requirements.txt
 ```
-
+    
+# 1. Machine Learning
+    
+## Questão
+    
+Explique com suas palavras qual seria o impacto de um dataset desbalanceado em um modelo de classificação e proponha uma solução para mitigar esse problema.
+    
+## Resposta
+    
+- Em modelo desbalanceado as classes não estão sendo representadas de forma equilibrada e isso pode gerar resultados enviesados. Por exemplo, imagine um modelo que prevê doenças no coração e o dataset contém muito mais dados de mulheres do que de homens. Nesse caso, o modelo pode se tornar tendencioso e apresentar resultados mais fortes para as mulheres, enquanto pode não ser tão preciso para os homens.
+    
+- Para corrigir podemos seguir duas abordagens:
+   - Undersampling (Subamostragem): retirar uma amostra menor de dados de mulheres para que fique equivalente à quantidade de dados de homens.
+   - Oversampling (Superamostragem): podemos buscar enriquecer a fonte com mais dados de homens, seja buscando de outras fontes ou criando novos exemplos sintéticos a partir dos originais.
+    
 # 2. Data Analysis
     
 ## Detalhes do código    
