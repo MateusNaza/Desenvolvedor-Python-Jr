@@ -1,0 +1,1 @@
+Chave de exemplo para representar a key pair
