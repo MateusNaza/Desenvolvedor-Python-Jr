@@ -113,8 +113,59 @@ Para essa atividade utilizei a biblioteza _asyncio_ do python, criei uma funçã
 1. Estando na pasta raiz do repositório, instale as dependências: ```bash pip install -r requirements ```
 2. Acesse a pasta '4.\ Asynchronous\ Programming' atravéz do comando: ```bash cd 4.\ Asynchronous\ Programming```
 3. Execute o script: ```bash python main.py ```
-     
+        
+
+# 5. Cloud Services  
+       
+## Resposta à questão
+       
+Com minha aplicação containerizada dentro de uma imagem, poderia seguir por dois caminhos:
       
+- Registrar ela no Amazon ECR
+- Registrar ela no Docker Hub
+      
+Nesse projeto optei por subir ela no **Docker Hub**, assim como citei no **Exercício 6**.
+      
+Dentro do console AWS, inicio os seguintes passos:
+         
+1. Criei um _key pair_ do tipo RSA para permitir acesso seguro à instância via SSH.
+2. Criei um _Security Group_ bem restrito.
+3. Criei uma instância padrão do EC2 do tipo t2.micro e utilizei o _key pair_ e _security group_ anteriores.
+      
+Com a instância criada, realizei o acesso via terminal e efetuei os seguintes comandos:
+     
+```bash
+# Atualiza a lista de pacotes
+sudo yum update -y
+
+# Instala o Docker
+sudo yum install docker -y
+
+# Inicia a engine do Docker
+sudo service docker start
+
+# Adiciona o usuário atual ao Docker para permitir 
+# execuções sem precisar do comando 'sudo' no início
+sudo usermod -a -G docker ec2-user
+
+# Faz login no Docker Hub
+docker login
+
+# Faz o pull da minha imagem
+docker pull mateusnazahub/flask_app:latest
+
+# Verifica a lista de imagens para ver se veio certinho
+docker images
+
+# Inicia um container a partir da minha imagem
+docker run -d --rm -p 5000:5000 mateusnazahub/flask_app
+```
+    
+Pronto, após esses passos a API já está rodando dentro da EC2 e está disponível dentro do link abaixo, lembre-se de substituir DigiteSeuNome pelo seu nome.
+    
+http://ec2-54-86-100-78.compute-1.amazonaws.com:5000/saudacao?nome=DigiteSeuNome   
+    
+
 # 6. Containerization    
      
 ## Detalhes do desenvolvimento
