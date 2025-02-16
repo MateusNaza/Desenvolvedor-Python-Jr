@@ -1,8 +1,8 @@
 # Desenvolvedor-Python-Jr
 
 # Índice
-
-0. [Preparação de ambiente](#preparação-de-ambiente)    
+    
+[Preparação de ambiente](#preparação-de-ambiente)    
 1. [Machine Learning](#1-machine-learning)
    - [Questão](#questão)
    - [Resposta](#resposta)
